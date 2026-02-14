@@ -98,12 +98,12 @@ git init
 git add .
 git commit -m "Initial portfolio"
 git branch -M main
-git remote add origin https://github.com/yourusername/portfolio.git
+git remote add origin https://github.com/sanchitbishwakarma/portfolio.git
 git push -u origin main
 
 # 3. Go to repo Settings → Pages
 # 4. Select 'main' branch
-# 5. Your site will be live at: yourusername.github.io/portfolio
+# 5. Your site will be live at: sanchitbishwakarma.github.io/portfolio
 ```
 
 ### Netlify (Easiest - Free!)

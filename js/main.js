@@ -1,208 +1,99 @@
 // ===================================
-// Data - All your portfolio information
+// Projects Data
 // ===================================
-
-const portfolioData = {
-    projects: [
-        {
-            title: "Discord Moderation Bot",
-            description: "A powerful Discord bot focused on moderation and security features with automated workflows and contextual logging.",
-            icon: "fab fa-discord",
-            badge: "Public",
-            image: "images/project1.jpg",
-            tags: ["JavaScript", "Discord.js", "Node.js"],
-            stars: 127,
-            forks: 23,
-            link: "#"
-        },
-        {
-            title: "Portfolio Website",
-            description: "Modern portfolio website with stunning animations and responsive design. Built with vanilla HTML, CSS, and JavaScript.",
-            icon: "fas fa-globe",
-            badge: "Public",
-            image: "images/project2.jpg",
-            tags: ["HTML", "CSS", "JavaScript"],
-            stars: 89,
-            forks: 15,
-            link: "#"
-        },
-        {
-            title: "Chrome Extension - Media Downloader",
-            description: "Browser extension that allows users to download images and videos with advanced filtering options.",
-            icon: "fab fa-chrome",
-            badge: "Public",
-            image: "images/project3.jpg",
-            tags: ["JavaScript", "Chrome API", "HTML"],
-            stars: 234,
-            forks: 45,
-            link: "#"
-        },
-        {
-            title: "Full Stack E-Commerce",
-            description: "Complete e-commerce platform with payment integration, inventory management, and admin dashboard.",
-            icon: "fas fa-shopping-cart",
-            badge: "Public",
-            image: "images/project4.jpg",
-            tags: ["React", "Node.js", "MongoDB"],
-            stars: 156,
-            forks: 32,
-            link: "#"
-        },
-        {
-            title: "AI Chat Application",
-            description: "Real-time chat application with AI-powered responses and sentiment analysis.",
-            icon: "fas fa-robot",
-            badge: "Public",
-            image: "images/project5.jpg",
-            tags: ["Python", "Flask", "OpenAI"],
-            stars: 198,
-            forks: 41,
-            link: "#"
-        },
-        {
-            title: "Task Management System",
-            description: "Collaborative task management tool with real-time updates and team collaboration features.",
-            icon: "fas fa-tasks",
-            badge: "Public",
-            image: "images/project6.jpg",
-            tags: ["Vue.js", "Firebase", "Tailwind"],
-            stars: 112,
-            forks: 28,
-            link: "#"
-        }
-    ],
-
-    skills: [
-        {
-            name: "JavaScript",
-            icon: "fab fa-js",
-            level: "Expert",
-            percentage: 95,
-            color: "#f0db4f"
-        },
-        {
-            name: "React",
-            icon: "fab fa-react",
-            level: "Advanced",
-            percentage: 90,
-            color: "#61dafb"
-        },
-        {
-            name: "Node.js",
-            icon: "fab fa-node",
-            level: "Advanced",
-            percentage: 88,
-            color: "#68a063"
-        },
-        {
-            name: "Python",
-            icon: "fab fa-python",
-            level: "Intermediate",
-            percentage: 80,
-            color: "#3776ab"
-        },
-        {
-            name: "HTML/CSS",
-            icon: "fab fa-html5",
-            level: "Expert",
-            percentage: 95,
-            color: "#e34c26"
-        },
-        {
-            name: "Git & GitHub",
-            icon: "fab fa-git-alt",
-            level: "Advanced",
-            percentage: 85,
-            color: "#f05032"
-        },
-        {
-            name: "MongoDB",
-            icon: "fas fa-database",
-            level: "Intermediate",
-            percentage: 75,
-            color: "#4db33d"
-        },
-        {
-            name: "Docker",
-            icon: "fab fa-docker",
-            level: "Intermediate",
-            percentage: 70,
-            color: "#0db7ed"
-        }
-    ],
-
-    platforms: [
-        {
-            name: "YouTube Channel",
-            icon: "fab fa-youtube",
-            description: "Building with the new tech and frameworks",
-            subscribers: "12.5K",
-            videos: 145,
-            link: "#"
-        },
-        {
-            name: "Dev Blog",
-            icon: "fas fa-blog",
-            description: "Sharing knowledge and insights about web development",
-            subscribers: "8.2K",
-            videos: 89,
-            link: "#"
-        },
-        {
-            name: "GitHub",
-            icon: "fab fa-github",
-            description: "Open source contributions and personal projects",
-            subscribers: "2.3K",
-            videos: 67,
-            link: "#"
-        }
-    ]
-};
+const projects = [
+    {
+        title: "Discord Moderation Bot",
+        description: "A powerful Discord bot focused on moderation and security features with automated workflows, contextual logging, and self-healing configurations.",
+        image: "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=600",
+        tags: ["JavaScript", "Discord.js", "Node.js", "MongoDB"],
+        github: "https://github.com/sanchitbishwakarma",
+        demo: "#"
+    },
+    {
+        title: "E-Commerce Platform",
+        description: "Full-featured e-commerce platform with payment integration, inventory management, and comprehensive admin dashboard.",
+        image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600",
+        tags: ["React", "Node.js", "MongoDB", "Stripe"],
+        github: "https://github.com/sanchitbishwakarma",
+        demo: "#"
+    },
+    {
+        title: "Task Management System",
+        description: "Collaborative task management tool with real-time updates, team collaboration features, and intuitive drag-and-drop interface.",
+        image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600",
+        tags: ["Vue.js", "Firebase", "Tailwind CSS"],
+        github: "https://github.com/sanchitbishwakarma",
+        demo: "#"
+    },
+    {
+        title: "AI Chat Application",
+        description: "Real-time chat application powered by AI with sentiment analysis, smart replies, and natural language processing.",
+        image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600",
+        tags: ["Python", "Flask", "OpenAI", "WebSocket"],
+        github: "https://github.com/sanchitbishwakarma",
+        demo: "#"
+    },
+    {
+        title: "Portfolio Website Builder",
+        description: "Drag-and-drop portfolio website builder with customizable templates, real-time preview, and one-click deployment.",
+        image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600",
+        tags: ["React", "Node.js", "AWS", "Docker"],
+        github: "https://github.com/sanchitbishwakarma",
+        demo: "#"
+    },
+    {
+        title: "Weather Dashboard",
+        description: "Beautiful weather dashboard with real-time data, forecasts, interactive maps, and customizable widgets.",
+        image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600",
+        tags: ["JavaScript", "API Integration", "Chart.js"],
+        github: "https://github.com/sanchitbishwakarma",
+        demo: "#"
+    }
+];
 
 // ===================================
 // DOM Ready
 // ===================================
-
 $(document).ready(function () {
-    // Load all content
+    // Load projects
     loadProjects();
-    loadSkills();
-    loadPlatforms();
 
-    // Initialize interactions
+    // Initialize all features
     initNavigation();
-    initScrollAnimations();
     initMobileMenu();
+    initScrollAnimations();
+    initCounters();
+    initSkillBars();
+    initContactForm();
 });
 
 // ===================================
 // Load Projects
 // ===================================
-
 function loadProjects() {
     const projectsGrid = $('#projectsGrid');
 
-    portfolioData.projects.forEach((project, index) => {
+    projects.forEach((project, index) => {
         const projectCard = `
-            <div class="project-card" style="animation-delay: ${index * 0.1}s">
-                <div class="project-header">
-                    <i class="${project.icon} project-icon"></i>
-                    <a href="${project.link}" class="project-title">${project.title}</a>
-                    <span class="project-badge">${project.badge}</span>
+            <div class="project-card fade-in" style="animation-delay: ${index * 0.1}s">
+                <div class="project-image-wrapper">
+                    <img src="${project.image}" alt="${project.title}" class="project-image">
+                    <div class="project-overlay">
+                        <a href="${project.github}" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="${project.demo}" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
                 </div>
-                <p class="project-description">${project.description}</p>
-                <div class="project-tags">
-                    ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-                </div>
-                <div class="project-stats">
-                    <span class="stat">
-                        <i class="fas fa-star"></i>
-                        ${project.stars}
-                    </span>
-                    <span class="stat">
-                        <i class="fas fa-code-branch"></i>
-                        ${project.forks}
-                    </span>
+                <div class="project-content">
+                    <h3 class="project-title">${project.title}</h3>
+                    <p class="project-description">${project.description}</p>
+                    <div class="project-tags">
+                        ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
+                    </div>
                 </div>
             </div>
         `;
@@ -212,92 +103,41 @@ function loadProjects() {
 }
 
 // ===================================
-// Load Skills
-// ===================================
-
-function loadSkills() {
-    const skillsGrid = $('#skillsGrid');
-
-    portfolioData.skills.forEach((skill, index) => {
-        const skillCard = `
-            <div class="skill-card" style="animation-delay: ${index * 0.1}s">
-                <div class="skill-header">
-                    <i class="${skill.icon} skill-icon" style="color: ${skill.color}"></i>
-                    <div>
-                        <div class="skill-name">${skill.name}</div>
-                        <div class="skill-level">${skill.level}</div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-progress" data-progress="${skill.percentage}" style="width: 0%"></div>
-                </div>
-            </div>
-        `;
-
-        skillsGrid.append(skillCard);
-    });
-}
-
-// ===================================
-// Load Platforms
-// ===================================
-
-function loadPlatforms() {
-    const platformsGrid = $('#platformsGrid');
-
-    portfolioData.platforms.forEach((platform, index) => {
-        const platformCard = `
-            <div class="platform-card" style="animation-delay: ${index * 0.1}s">
-                <div class="platform-header">
-                    <i class="${platform.icon} platform-icon"></i>
-                    <div class="platform-name">${platform.name}</div>
-                </div>
-                <p class="platform-description">${platform.description}</p>
-                <div class="platform-stats">
-                    <span class="stat">
-                        <i class="fas fa-users"></i>
-                        ${platform.subscribers} subscribers
-                    </span>
-                    <span class="stat">
-                        <i class="fas fa-video"></i>
-                        ${platform.videos} posts
-                    </span>
-                </div>
-            </div>
-        `;
-
-        platformsGrid.append(platformCard);
-    });
-}
-
-// ===================================
 // Navigation
 // ===================================
-
 function initNavigation() {
-    // Smooth scroll for navigation links
+    // Smooth scroll
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
 
         const target = $(this.getAttribute('href'));
         if (target.length) {
             $('html, body').stop().animate({
-                scrollTop: target.offset().top - 80
-            }, 800);
+                scrollTop: target.offset().top - 70
+            }, 1000);
 
             // Update active link
-            $('.nav-link, .mobile-link').removeClass('active');
+            $('.nav-link').removeClass('active');
             $(this).addClass('active');
 
-            // Close mobile menu if open
-            $('.mobile-menu').removeClass('active');
+            // Close mobile menu
+            $('.nav-menu').removeClass('active');
+            $('.hamburger').removeClass('active');
         }
     });
 
-    // Highlight active section on scroll
+    // Scroll spy
     $(window).on('scroll', function () {
         const scrollPos = $(window).scrollTop() + 100;
 
+        // Add scrolled class to navbar
+        if ($(window).scrollTop() > 50) {
+            $('.navbar').addClass('scrolled');
+        } else {
+            $('.navbar').removeClass('scrolled');
+        }
+
+        // Highlight active section
         $('section[id]').each(function () {
             const section = $(this);
             const sectionTop = section.offset().top;
@@ -315,25 +155,17 @@ function initNavigation() {
 // ===================================
 // Mobile Menu
 // ===================================
-
 function initMobileMenu() {
-    $('.mobile-menu-btn').on('click', function () {
-        $('.mobile-menu').toggleClass('active');
-
-        // Animate icon
-        const icon = $(this).find('i');
-        if (icon.hasClass('fa-bars')) {
-            icon.removeClass('fa-bars').addClass('fa-times');
-        } else {
-            icon.removeClass('fa-times').addClass('fa-bars');
-        }
+    $('#hamburger').on('click', function () {
+        $(this).toggleClass('active');
+        $('#navMenu').toggleClass('active');
     });
 
     // Close menu when clicking outside
     $(document).on('click', function (e) {
-        if (!$(e.target).closest('.mobile-menu-btn, .mobile-menu').length) {
-            $('.mobile-menu').removeClass('active');
-            $('.mobile-menu-btn i').removeClass('fa-times').addClass('fa-bars');
+        if (!$(e.target).closest('.navbar').length) {
+            $('#navMenu').removeClass('active');
+            $('#hamburger').removeClass('active');
         }
     });
 }
@@ -341,84 +173,179 @@ function initMobileMenu() {
 // ===================================
 // Scroll Animations
 // ===================================
-
 function initScrollAnimations() {
-    // Animate skill bars when they come into view
-    const animateSkillBars = () => {
-        $('.skill-progress').each(function () {
-            const skillBar = $(this);
-            const progress = skillBar.data('progress');
-            const skillTop = skillBar.offset().top;
-            const windowBottom = $(window).scrollTop() + $(window).height();
-
-            if (windowBottom > skillTop && skillBar.width() === 0) {
-                skillBar.animate({
-                    width: progress + '%'
-                }, 1500, 'swing');
-            }
-        });
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
     };
 
-    // Fade in elements on scroll
-    const fadeInOnScroll = () => {
-        $('.project-card, .skill-card, .platform-card').each(function () {
-            const element = $(this);
-            const elementTop = element.offset().top;
-            const windowBottom = $(window).scrollTop() + $(window).height();
-
-            if (windowBottom > elementTop + 100) {
-                element.css('opacity', '1');
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
             }
         });
-    };
+    }, observerOptions);
 
-    // Run on scroll
-    $(window).on('scroll', function () {
-        animateSkillBars();
-        fadeInOnScroll();
+    // Observe all sections
+    $('section').each(function () {
+        observer.observe(this);
     });
 
-    // Run once on load
-    animateSkillBars();
-    fadeInOnScroll();
+    // Observe project cards
+    $('.project-card').each(function () {
+        observer.observe(this);
+    });
 }
 
 // ===================================
-// Counter Animation
+// Animated Counters
 // ===================================
+function initCounters() {
+    let countersAnimated = false;
 
-function animateCounter(element, target, duration = 2000) {
-    const start = 0;
-    const increment = target / (duration / 16);
-    let current = start;
+    $(window).on('scroll', function () {
+        const aboutSection = $('#about');
+        if (!aboutSection.length) return;
 
-    const timer = setInterval(() => {
-        current += increment;
-        if (current >= target) {
-            element.text(target);
-            clearInterval(timer);
-        } else {
-            element.text(Math.floor(current));
+        const aboutTop = aboutSection.offset().top;
+        const windowBottom = $(window).scrollTop() + $(window).height();
+
+        if (windowBottom > aboutTop && !countersAnimated) {
+            countersAnimated = true;
+
+            $('.stat-number').each(function () {
+                const $this = $(this);
+                const target = parseInt($this.data('target'));
+
+                $({ counter: 0 }).animate({ counter: target }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function () {
+                        $this.text(Math.ceil(this.counter));
+                    },
+                    complete: function () {
+                        $this.text(target);
+                    }
+                });
+            });
         }
-    }, 16);
+    });
 }
 
 // ===================================
-// Add hover effects to cards
+// Skill Bars Animation
 // ===================================
+function initSkillBars() {
+    let skillsAnimated = false;
 
-$(document).on('mouseenter', '.project-card, .skill-card, .platform-card', function () {
-    $(this).css('transform', 'translateY(-5px)');
+    $(window).on('scroll', function () {
+        const skillsSection = $('#skills');
+        if (!skillsSection.length) return;
+
+        const skillsTop = skillsSection.offset().top;
+        const windowBottom = $(window).scrollTop() + $(window).height();
+
+        if (windowBottom > skillsTop + 100 && !skillsAnimated) {
+            skillsAnimated = true;
+
+            $('.skill-progress').each(function () {
+                const $this = $(this);
+                const progress = $this.data('progress');
+
+                $this.animate({
+                    width: progress + '%'
+                }, 1500, 'swing');
+            });
+        }
+    });
+}
+
+// ===================================
+// Contact Form
+// ===================================
+function initContactForm() {
+    $('#contactForm').on('submit', function (e) {
+        e.preventDefault();
+
+        const name = $('#name').val();
+        const email = $('#email').val();
+        const subject = $('#subject').val();
+        const message = $('#message').val();
+
+        // Validate
+        if (!name || !email || !subject || !message) {
+            alert('Please fill in all fields');
+            return;
+        }
+
+        // Show loading state
+        const $submitBtn = $('.btn-submit');
+        const originalText = $submitBtn.html();
+        $submitBtn.html('<i class="fas fa-spinner fa-spin"></i> Sending...').prop('disabled', true);
+
+        // Simulate form submission
+        setTimeout(function () {
+            // Success message
+            $submitBtn.html('<i class="fas fa-check"></i> Message Sent!');
+
+            // Reset form
+            $('#contactForm')[0].reset();
+
+            // Show success alert
+            alert('Thank you for your message! I will get back to you soon.');
+
+            // Reset button
+            setTimeout(function () {
+                $submitBtn.html(originalText).prop('disabled', false);
+            }, 2000);
+        }, 1500);
+    });
+}
+
+// ===================================
+// Smooth Page Load
+// ===================================
+$(window).on('load', function () {
+    // Trigger scroll event to initialize animations
+    $(window).trigger('scroll');
 });
 
-$(document).on('mouseleave', '.project-card, .skill-card, .platform-card', function () {
-    $(this).css('transform', 'translateY(0)');
+// ===================================
+// Parallax Effect (Optional)
+// ===================================
+$(window).on('scroll', function () {
+    const scrolled = $(window).scrollTop();
+    $('.hero').css('transform', 'translateY(' + (scrolled * 0.3) + 'px)');
 });
 
 // ===================================
-// Console Easter Egg
+// Typing Effect for Hero (Optional Enhancement)
 // ===================================
+function typeWriter(element, text, speed = 100) {
+    let i = 0;
+    const $element = $(element);
+    $element.text('');
 
-console.log('%c👋 Hey there, fellow developer!', 'font-size: 20px; font-weight: bold; color: #58a6ff;');
-console.log('%cLooking for something? Feel free to reach out!', 'font-size: 14px; color: #8b949e;');
-console.log('%c💼 Portfolio built with ❤️ using HTML, CSS, JavaScript & jQuery', 'font-size: 12px; color: #238636;');
+    function type() {
+        if (i < text.length) {
+            $element.text($element.text() + text.charAt(i));
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+
+    type();
+}
+
+// Uncomment to enable typing effect
+// $(document).ready(function() {
+//     typeWriter('.hero-subtitle', 'Full Stack Developer & Creative Coder', 80);
+// });
+
+// ===================================
+// Console Message
+// ===================================
+console.log('%c👋 Hey there, fellow developer!', 'font-size: 20px; font-weight: bold; color: #2563eb;');
+console.log('%cLooking for something? Feel free to reach out!', 'font-size: 14px; color: #6b7280;');
+console.log('%c💼 Built with HTML, CSS, JavaScript & jQuery', 'font-size: 12px; color: #10b981;');

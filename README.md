@@ -50,7 +50,7 @@ projects: [
         tags: ["JavaScript", "React", "Node.js"],
         stars: 127,
         forks: 23,
-        link: "https://github.com/yourusername/project"
+        link: "https://github.com/sanchitbishwakarma/project"
     }
 ]
 ```
@@ -99,7 +99,7 @@ If you want project thumbnails:
 
 Edit `index.html` lines 60-74:
 ```html
-<a href="https://twitter.com/yourusername" target="_blank" class="social-link">
+<a href="https://twitter.com/sanchitbishwakarma" target="_blank" class="social-link">
     <i class="fab fa-twitter"></i>
 </a>
 ```
@@ -218,4 +218,4 @@ Free to use for personal portfolios. Give credit if you want! 😊
 
 ---
 
-**Made by Sanchit Bishwakarma** | [GitHub](https://github.com/yourusername) | [LinkedIn](https://linkedin.com/in/yourusername)
+**Made by Sanchit Bishwakarma** | [GitHub](https://github.com/sanchitbishwakarma) | [LinkedIn](https://linkedin.com/in/sanchitbishwakarma)

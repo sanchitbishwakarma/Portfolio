@@ -10,17 +10,17 @@ Copy this template, fill it out, then use it to update your portfolio!
 **Username/Handle:** sanchitbishwakarma
 **Tagline/Bio:** I make exciting projects and build products that serve millions of users
 
-**Email:** your.email@example.com
+**Email:** sanchitbishwakarma91@gmail.com
 **Location:** Your City, Country (optional)
 
 ---
 
 ## Social Media Links
 
-**GitHub:** https://github.com/yourusername
-**LinkedIn:** https://linkedin.com/in/yourusername
-**Twitter:** https://twitter.com/yourusername
-**Instagram:** https://instagram.com/yourusername
+**GitHub:** https://github.com/sanchitbishwakarma
+**LinkedIn:** https://linkedin.com/in/sanchitbishwakarma
+**Twitter:** https://twitter.com/sanchitbishwakarma
+**Instagram:** https://instagram.com/sanchitbishwakarma
 **Portfolio/Website:** https://yourwebsite.com
 
 ---

@@ -62,7 +62,7 @@
 │  🌐 DEPLOY (FREE!)                                                   │
 └──────────────────────────────────────────────────────────────────────┘
 
-  GitHub Pages:  yourusername.github.io/portfolio
+  GitHub Pages:  sanchitbishwakarma.github.io/portfolio
   Netlify:       Drag & drop at netlify.com/drop
   Vercel:        Run 'vercel' command
 
