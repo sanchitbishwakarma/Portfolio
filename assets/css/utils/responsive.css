@@ -51,6 +51,12 @@
         display: none;
     }
 
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
     .footer-links {
         justify-content: center;
         flex-wrap: wrap;
