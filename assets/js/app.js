@@ -361,16 +361,31 @@ function animateCounter(element, target, duration) {
 
 // Scroll Animations
 function initAnimations() {
-    // Fade in cards on load
-    $(".project-card, .youtube-card, .platform-card, .activity-item").each(function (index) {
+    const selectors = [
+        ".profile-section",
+        ".sub-nav-item",
+        ".section-header",
+        ".project-card",
+        ".youtube-card",
+        ".platform-card",
+        ".activity-item",
+        ".contribution-graph",
+        ".footer"
+    ];
+
+    $(selectors.join(", ")).each(function (index) {
         $(this).css({
             opacity: 0,
-            transform: 'translateY(20px)'
-        }).delay(index * 100).animate({
-            opacity: 1
-        }, 200).css({
-            transform: 'translateY(0)'
+            transform: 'translateY(20px)',
+            transition: 'opacity 0.5s ease, transform 0.5s ease'
         });
+
+        setTimeout(() => {
+            $(this).css({
+                opacity: 1,
+                transform: 'translateY(0)'
+            });
+        }, index * 50);
     });
 }
 
