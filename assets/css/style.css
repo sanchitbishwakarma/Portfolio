@@ -1,7 +1,7 @@
-/* GitHub Dark Theme Variables */
 :root {
-    --bg: #151b23;
-    --card: #0d1117;
+    --bg: #0d1117;
+    --card: #151b23;
+    --nav-bg: #010409;
     --border: #30363d;
     --text: #c9d1d9;
     --muted: #8b949e;
@@ -9,6 +9,7 @@
     --link-hover: #79c0ff;
     --green: #238636;
     --green-hover: #2ea043;
+    --subnav-bg: #151b23;
 
     /* Responsive Typography */
     --fs-xs: clamp(0.65rem, 0.5vw + 0.5rem, 0.75rem);
@@ -25,6 +26,18 @@
     /* 24px-32px */
 }
 
+[data-theme="light"] {
+    --bg: #ffffff;
+    --card: #f6f8fa;
+    --nav-bg: #f6f8fa;
+    --border: #d0d7de;
+    --text: #24292f;
+    --muted: #57606a;
+    --link: #0969da;
+    --link-hover: #0c87eb;
+    --subnav-bg: #ffffff;
+}
+
 /* Reset & Base */
 * {
     margin: 0;
@@ -39,6 +52,7 @@ body {
     background: var(--bg);
     color: var(--text);
     line-height: 1.5;
+    transition: background 0.3s, color 0.3s;
 }
 
 a {
@@ -52,7 +66,7 @@ a:hover {
 
 /* Navbar */
 .navbar {
-    background: #010409;
+    background: var(--nav-bg);
     border-bottom: 1px solid var(--border);
     padding: 16px 32px;
     position: sticky;
@@ -78,13 +92,13 @@ a:hover {
     background: none;
     border: none;
     color: var(--text);
-    font-size: var(--fs-xl);
+    font-size: var(--fs-sm);
     cursor: pointer;
     display: none;
 }
 
 .nav-logo {
-    font-size: var(--fs-2xl);
+    font-size: var(--fs-xl);
     color: var(--text);
 }
 
@@ -94,7 +108,7 @@ a:hover {
     color: var(--text);
     padding: 8px 12px;
     border-radius: 6px;
-    width: 300px;
+    width: 450px;
     font-size: var(--fs-base);
 }
 
@@ -126,6 +140,21 @@ a:hover {
     cursor: pointer;
 }
 
+.theme-toggle {
+    cursor: pointer;
+    font-size: var(--fs-lg);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    color: var(--link);
+    transform: rotate(15deg);
+}
+
 .nav-avatar {
     width: 32px;
     height: 32px;
@@ -138,8 +167,7 @@ a:hover {
     border-bottom: 1px solid var(--border);
     background: var(--bg);
     position: sticky;
-    top: 73px;
-    /* height of navbar */
+    top: 70.87px;
     z-index: 99;
 }
 
@@ -173,7 +201,7 @@ a:hover {
 }
 
 .sub-nav-item span {
-    background: #30363d;
+    background: var(--border);
     padding: 2px 8px;
     border-radius: 12px;
     font-size: var(--fs-sm);
@@ -325,7 +353,7 @@ a:hover {
 .social-circle {
     width: 44px;
     height: 44px;
-    background: #0d1117;
+    background: var(--card);
     border: 1px solid var(--border);
     border-radius: 50%;
     display: flex;
@@ -860,6 +888,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.menu-btn {
+    display: block;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
     .container {
@@ -888,10 +920,6 @@ a:hover {
         display: none;
     }
 
-    .menu-btn {
-        display: block;
-    }
-
     .search-input {
         width: 200px;
     }
@@ -904,6 +932,10 @@ a:hover {
 
     .navbar {
         padding: 12px 16px;
+    }
+
+    .sub-nav {
+        top: 57.87px;
     }
 
     .search-input {
@@ -941,6 +973,10 @@ a:hover {
 
     .platform-btn {
         font-size: var(--fs-xs);
+    }
+
+    .github-username {
+        display: none;
     }
 }
 
