@@ -226,12 +226,6 @@ function initAnimations() {
     });
 }
 
-// ===================================
-// Mobile Menu Toggle
-// ===================================
-$(".menu-btn").click(function () {
-    alert("Mobile menu - Add your navigation here!");
-});
 
 // ===================================
 // Smooth Hover Effects

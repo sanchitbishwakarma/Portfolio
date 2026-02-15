@@ -806,6 +806,7 @@ a:hover {
 .activity-header {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 8px;
 }
@@ -820,10 +821,6 @@ a:hover {
 
 .activity-icon {
     color: var(--muted);
-}
-
-.activity-text {
-    font-size: 14px;
 }
 
 .activity-time {
@@ -950,6 +947,16 @@ a:hover {
 
     .section-header:has(#contributionCount) {
         display: none;
+    }
+
+    .platforms-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+    .platform-btn {
+        font-size: 10px;
     }
 }
 
