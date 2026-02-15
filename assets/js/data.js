@@ -90,14 +90,14 @@ const platformsData = [
         "description": "A book review application built with React Native and Expo.",
         "iosLink": "#",
         "androidLink": "#",
-        "icon": "/assets/bookies-logo.png"
+        "icon": "assets/img/bookies-logo.png"
     },
     {
         "name": "Give Me Movie",
         "description": "A movie review application built with React Native and Expo.",
         "iosLink": "#",
         "androidLink": "#",
-        "icon": "/assets/give-me-movie-logo.png"
+        "icon": "assets/img/give-me-movie-logo.png"
     }
 ];
 
