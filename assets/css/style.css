@@ -916,6 +916,10 @@ a:hover {
         grid-template-columns: 1fr;
     }
 
+    .container.side-hidden .sidebar {
+        display: none;
+    }
+
     .nav-right .nav-link {
         display: none;
     }

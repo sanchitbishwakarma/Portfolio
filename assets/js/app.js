@@ -61,6 +61,13 @@ $(document).ready(function () {
     function switchTab(tab) {
         $('.sub-nav-item').removeClass('active');
         tab.addClass('active');
+
+        // Hide sidebar on mobile for repos and stars
+        if (tab.attr('id') === 'overviewTab') {
+            $('.container').removeClass('side-hidden');
+        } else {
+            $('.container').addClass('side-hidden');
+        }
     }
 
     function fetchGitHubData(url) {
