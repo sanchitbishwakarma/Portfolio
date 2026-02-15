@@ -5,12 +5,49 @@ $(document).ready(function () {
     // Render all data
     renderProjects(projectsData);
     renderYouTube(youtubeData);
+    renderPlatforms(platformsData);
     renderActivity(activityData);
     generateContributionGraph();
 
     // Initialize features
     initAnimations();
 });
+
+// ===================================
+// Render Platforms
+// ===================================
+function renderPlatforms(data) {
+    let html = "";
+
+    data.forEach(platform => {
+        html += `
+            <div class="platform-card">
+                <div class="platform-left">
+                    <div class="platform-header">
+                        <i class="fas fa-circle-dot platform-icon"></i>
+                        <span class="platform-title">${platform.name}</span>
+                    </div>
+                    <p class="platform-description">${platform.description}</p>
+                    <div class="platform-buttons">
+                        <a href="${platform.iosLink}" class="platform-btn">
+                            <i class="fab fa-apple"></i> iOS App
+                        </a>
+                        <a href="${platform.androidLink}" class="platform-btn">
+                            <i class="fab fa-android"></i> Android App
+                        </a>
+                    </div>
+                </div>
+                <div class="platform-right">
+                    <div class="platform-image-container">
+                        <img src="${platform.icon}" alt="${platform.name}">
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+
+    $("#platforms").html(html);
+}
 
 // ===================================
 // Render Projects
