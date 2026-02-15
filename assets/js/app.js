@@ -7,6 +7,31 @@ $(document).ready(function () {
     renderActivity(activityData);
     generateContributionGraph();
 
+    // Theme Toggle
+    const themeToggle = $('#themeToggle');
+    const themeIcon = themeToggle.find('i');
+
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    themeToggle.on('click', function () {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(newTheme);
+    });
+
+    function updateThemeIcon(theme) {
+        if (theme === 'dark') {
+            themeIcon.removeClass('fa-sun').addClass('fa-moon');
+        } else {
+            themeIcon.removeClass('fa-moon').addClass('fa-sun');
+        }
+    }
+
     // Initialize features
     initAnimations();
 });
