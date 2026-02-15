@@ -16,13 +16,14 @@
 
 .sub-nav-item {
     padding: 12px 16px;
-    font-size: var(--fs-base);
+    font-size: var(--fs-sm);
     color: var(--text);
     display: flex;
     align-items: center;
     gap: 8px;
     position: relative;
     border-bottom: 2px solid transparent;
+    font-weight: 400;
 }
 
 .sub-nav-item:hover {
