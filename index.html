@@ -67,10 +67,10 @@
     <!-- Sub-navigation -->
     <div class="sub-nav">
         <div class="sub-nav-container">
-            <a href="#" class="sub-nav-item active">
+            <a href="javascript:void(0)" class="sub-nav-item active" id="overviewTab">
                 <i class="fas fa-book-open"></i> Overview
             </a>
-            <a href="https://github.com/sanchitbishwakarma?tab=repositories" target="_blank" class="sub-nav-item">
+            <a href="javascript:void(0)" class="sub-nav-item" id="reposTab">
                 <i class="fas fa-book-bookmark"></i> Repositories <span>99</span>
             </a>
             <a href="https://github.com/sanchitbishwakarma?tab=projects" target="_blank" class="sub-nav-item">
@@ -159,67 +159,69 @@
         <!-- Content -->
         <main class="content">
             <!-- Main Content -->
-            <!-- Pins -->
-            <div class="section-header">
-                <h2>Pinned</h2>
-                <a href="#" class="customize-link">Customize your pins</a>
-            </div>
+            <div id="mainContentArea">
+                <!-- Pins -->
+                <div class="section-header">
+                    <h2>Pinned</h2>
+                    <a href="#" class="customize-link">Customize your pins</a>
+                </div>
 
-            <div class="pinned-grid" id="pinnedProjects">
-                <!-- Dynamic Projects -->
-            </div>
+                <div class="pinned-grid" id="pinnedProjects">
+                    <!-- Dynamic Projects -->
+                </div>
 
-            <!-- YouTube -->
-            <div class="section-header" style="margin-top: 40px;">
-                <h2>YouTube</h2>
-            </div>
+                <!-- YouTube -->
+                <div class="section-header" style="margin-top: 40px;">
+                    <h2>YouTube</h2>
+                </div>
 
-            <div class="youtube-grid" id="youtubeChannels">
-                <!-- Dynamic YouTube -->
-            </div>
+                <div class="youtube-grid" id="youtubeChannels">
+                    <!-- Dynamic YouTube -->
+                </div>
 
-            <!-- Platforms -->
-            <div class="section-header" style="margin-top: 40px;">
-                <h2>Platforms</h2>
-            </div>
+                <!-- Platforms -->
+                <div class="section-header" style="margin-top: 40px;">
+                    <h2>Platforms</h2>
+                </div>
 
-            <div class="platforms-grid " id="platforms">
-                <!-- Dynamic Platforms -->
-            </div>
+                <div class="platforms-grid " id="platforms">
+                    <!-- Dynamic Platforms -->
+                </div>
 
-            <!-- Graph -->
-            <div class="section-header" style="margin-top: 40px;">
-                <h2>
-                    <span id="contributionCount">1,234</span> contributions in the last year
-                </h2>
-            </div>
+                <!-- Graph -->
+                <div class="section-header" style="margin-top: 40px;">
+                    <h2>
+                        <span id="contributionCount">1,234</span> contributions in the last year
+                    </h2>
+                </div>
 
-            <div class="contribution-graph">
-                <div class="graph-placeholder">
-                    <div class="graph-row" id="contributionGraph">
-                        <!-- Dynamic Squares -->
+                <div class="contribution-graph">
+                    <div class="graph-placeholder">
+                        <div class="graph-row" id="contributionGraph">
+                            <!-- Dynamic Squares -->
+                        </div>
+                    </div>
+                    <div class="graph-legend">
+                        <span>Less</span>
+                        <div class="legend-squares">
+                            <span class="square level-0"></span>
+                            <span class="square level-1"></span>
+                            <span class="square level-2"></span>
+                            <span class="square level-3"></span>
+                            <span class="square level-4"></span>
+                        </div>
+                        <span>More</span>
                     </div>
                 </div>
-                <div class="graph-legend">
-                    <span>Less</span>
-                    <div class="legend-squares">
-                        <span class="square level-0"></span>
-                        <span class="square level-1"></span>
-                        <span class="square level-2"></span>
-                        <span class="square level-3"></span>
-                        <span class="square level-4"></span>
-                    </div>
-                    <span>More</span>
+
+                <!-- Activity -->
+                <div class="section-header" style="margin-top: 40px;">
+                    <h2>Contribution activity</h2>
                 </div>
-            </div>
 
-            <!-- Activity -->
-            <div class="section-header" style="margin-top: 40px;">
-                <h2>Contribution activity</h2>
-            </div>
-
-            <div class="activity-timeline" id="activityTimeline">
-                <!-- Dynamic Activity -->
+                <div class="activity-timeline" id="activityTimeline">
+                    <!-- Dynamic Activity -->
+                </div>
             </div>
         </main>
     </div>
