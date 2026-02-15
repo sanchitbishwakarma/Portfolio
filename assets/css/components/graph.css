@@ -1,0 +1,79 @@
+.contribution-graph {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.graph-placeholder {
+    margin-bottom: 8px;
+}
+
+.graph-row {
+    display: flex;
+    gap: 3px;
+    flex-wrap: wrap;
+}
+
+.contribution-square {
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    background: var(--bg);
+}
+
+.contribution-square.level-1 {
+    background: #0e4429;
+}
+
+.contribution-square.level-2 {
+    background: #006d32;
+}
+
+.contribution-square.level-3 {
+    background: #26a641;
+}
+
+.contribution-square.level-4 {
+    background: #39d353;
+}
+
+.graph-legend {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    font-size: var(--fs-sm);
+    color: var(--muted);
+}
+
+.legend-squares {
+    display: flex;
+    gap: 3px;
+}
+
+.square {
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+}
+
+.square.level-0 {
+    background: var(--bg);
+}
+
+.square.level-1 {
+    background: #0e4429;
+}
+
+.square.level-2 {
+    background: #006d32;
+}
+
+.square.level-3 {
+    background: #26a641;
+}
+
+.square.level-4 {
+    background: #39d353;
+}

@@ -1,0 +1,41 @@
+.activity-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.activity-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.activity-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.activity-username {
+    color: #58a6ff;
+}
+
+.activity-repo {
+    color: #58a6ff;
+}
+
+.activity-icon {
+    color: var(--muted);
+}
+
+.activity-time {
+    font-size: var(--fs-sm);
+    color: var(--muted);
+}
+
+.muted {
+    color: var(--muted);
+}

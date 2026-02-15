@@ -1,0 +1,149 @@
+.sidebar {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.profile-section {
+    position: sticky;
+    top: 130px;
+    text-align: center;
+}
+
+.profile-image-container {
+    position: relative;
+    width: 100%;
+}
+
+.profile-image {
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+}
+
+.status-icon {
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+    width: 38px;
+    height: 38px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: var(--fs-lg);
+    user-select: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.profile-name {
+    font-size: var(--fs-xl);
+    font-weight: 600;
+    margin-top: 16px;
+    color: var(--text);
+}
+
+.profile-username {
+    font-size: var(--fs-xl);
+    color: var(--muted);
+    font-weight: 300;
+}
+
+.profile-bio {
+    margin: 24px 0;
+    font-size: var(--fs-base);
+    line-height: 1.5;
+    color: var(--text);
+}
+
+.profile-separator {
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+}
+
+.btn-follow {
+    width: 100%;
+    padding: 8px 16px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 16px;
+    font-size: var(--fs-base);
+}
+
+.btn-follow:hover {
+    background: var(--border);
+}
+
+.profile-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+    font-size: var(--fs-base);
+}
+
+.stat-item {
+    color: var(--muted);
+}
+
+.stat-item strong {
+    color: var(--text);
+}
+
+.stat-dot {
+    color: var(--muted);
+}
+
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 24px 0;
+    text-align: left;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--fs-base);
+    color: var(--muted);
+}
+
+.profile-link i {
+    width: 16px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin: 24px 0;
+}
+
+.social-circle {
+    width: 44px;
+    height: 44px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: var(--fs-lg);
+    transition: 0.2s;
+}
+
+.social-circle:hover {
+    background: var(--border);
+    color: var(--text);
+}
