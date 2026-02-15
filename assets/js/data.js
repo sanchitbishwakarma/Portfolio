@@ -1,7 +1,8 @@
 const projectsData = [
     {
         "title": "Complete web development course",
-        "description": "Learn full-stack web development with hands-on projects",
+        "link": "https://github.com/sanchitbishwakarma/complete-web-development-course",
+        "description": "Master HTML, CSS, JavaScript, and modern frontend and backend frameworks to build, test, and deploy fully functional full-stack web applications through detailed explanations, real-world examples, and hands-on projects designed for beginners to advanced developers.",
         "language": "JavaScript",
         "languageColor": "#f1e05a",
         "stars": 497,
@@ -9,7 +10,8 @@ const projectsData = [
     },
     {
         "title": "Docker and Kubernetes for beginners",
-        "description": "Master containerization and orchestration for modern DevOps",
+        "link": "https://github.com/sanchitbishwakarma/docker-and-kubernetes-for-beginners",
+        "description": "Learn containerization with Docker and orchestration with Kubernetes from scratch, including practical DevOps workflows, deployment strategies, scaling applications, and managing production-ready containerized environments step by step.",
         "language": "Go",
         "languageColor": "#00ADD8",
         "stars": 440,
@@ -17,7 +19,8 @@ const projectsData = [
     },
     {
         "title": "The Ultimate Python Bootcamp",
-        "description": "Build 50 real world projects from scratch",
+        "link": "https://github.com/sanchitbishwakarma/the-ultimate-python-bootcamp",
+        "description": "Build 50 real-world Python projects from scratch while mastering core programming concepts, object-oriented programming, file handling, APIs, automation, web development basics, and practical problem-solving skills.",
         "language": "Python",
         "languageColor": "#3572A5",
         "stars": 496,
@@ -25,7 +28,8 @@ const projectsData = [
     },
     {
         "title": "Node.js - Beginner to Advance course",
-        "description": "Complete Node.js course with practical project implementations",
+        "link": "https://github.com/sanchitbishwakarma/node-js-beginner-to-advance-course",
+        "description": "Complete Node.js course covering fundamentals to advanced topics, including REST APIs, authentication, databases, middleware, performance optimization, and multiple practical project implementations for real-world applications.",
         "language": "JavaScript",
         "languageColor": "#f1e05a",
         "stars": 209,
@@ -33,7 +37,8 @@ const projectsData = [
     },
     {
         "title": "Full stack generative AI with python",
-        "description": "Build AI applications with latest generative AI technologies",
+        "link": "https://github.com/sanchitbishwakarma/full-stack-generative-ai-with-python",
+        "description": "Build end-to-end AI applications using the latest generative AI technologies with Python, including large language models, prompt engineering, backend integration, APIs, and deployment of intelligent, production-ready systems.",
         "language": "Python",
         "languageColor": "#3572A5",
         "stars": 205,
@@ -41,13 +46,15 @@ const projectsData = [
     },
     {
         "title": "React - Complete Guide",
-        "description": "Master React.js with hooks, context, and modern patterns",
+        "link": "https://github.com/sanchitbishwakarma/react-complete-guide",
+        "description": "Master React.js with hooks, context API, state management, routing, performance optimization, and modern development patterns while building dynamic, scalable, and production-ready frontend applications step by step.",
         "language": "TypeScript",
         "languageColor": "#3178c6",
         "stars": 312,
         "forks": 89
     }
-];
+]
+
 const youtubeData = [
     {
         "name": "Sanchit Bishwakarma",

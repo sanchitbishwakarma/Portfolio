@@ -38,7 +38,6 @@ a {
 
 a:hover {
     color: var(--link-hover);
-    text-decoration: underline;
 }
 
 /* ===================================
@@ -390,6 +389,10 @@ a:hover {
     transform: translateY(-4px);
 }
 
+.project-card:hover .project-title {
+    text-decoration: underline;
+}
+
 .project-header {
     display: flex;
     align-items: center;
@@ -484,6 +487,10 @@ a:hover {
 .youtube-card:hover {
     border-color: #ff0000;
     transform: translateY(-2px);
+}
+
+.youtube-card:hover .youtube-channel-name {
+    text-decoration: underline;
 }
 
 .youtube-main-content {

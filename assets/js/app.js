@@ -57,11 +57,12 @@ function renderProjects(data) {
 
     data.forEach(project => {
         html += `
-            <div class="project-card">
+            <a href="${project.link}" target="_blank" class="project-card">
                 <div class="project-header">
                     <i class="fas fa-book project-icon"></i>
                     <span class="project-title">${project.title}</span>
                     <span class="project-badge">Public</span>
+                    <i class="fas fa-ellipsis-h project-icon"></i>
                 </div>
                 <p class="project-description">${project.description}</p>
                 <div class="project-footer">
@@ -78,7 +79,7 @@ function renderProjects(data) {
                         <span>${project.forks}</span>
                     </div>
                 </div>
-            </div>
+            </a>
         `;
     });
 
@@ -93,13 +94,13 @@ function renderYouTube(data) {
 
     data.forEach(channel => {
         html += `
-            <div class="youtube-card">
+            <a href="https://youtube.com/${channel.channelHandle}" target="_blank" class="youtube-card">
                 <div class="youtube-main-content">
                     <div class="youtube-left-side">
                         <div class="youtube-header-row">
                             <div class="youtube-brand">
                                 <i class="fab fa-youtube youtube-brand-icon"></i>
-                                <a href="https://youtube.com/${channel.channelHandle}" target="_blank" class="youtube-channel-name">${channel.name}</a>
+                                <span class="youtube-channel-name">${channel.name}</span>
                             </div>
                             <div class="youtube-menu-dots">
                                 <i class="fas fa-ellipsis-h"></i>
@@ -121,7 +122,7 @@ function renderYouTube(data) {
                         <img src="${channel.avatar}" alt="${channel.name}" class="youtube-channel-avatar">
                     </div>
                 </div>
-            </div>
+            </a>
         `;
     });
 
