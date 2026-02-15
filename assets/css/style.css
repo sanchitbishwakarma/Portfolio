@@ -634,6 +634,14 @@ a:hover {
     margin-bottom: 8px;
 }
 
+.activity-username {
+    color: #58a6ff;
+}
+
+.activity-repo {
+    color: #58a6ff;
+}
+
 .activity-icon {
     color: var(--muted);
 }

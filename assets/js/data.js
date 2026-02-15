@@ -51,6 +51,7 @@ const projectsData = [
 const youtubeData = [
     {
         "name": "Sanchit Bishwakarma",
+        "channelHandle": "@SanchitCodeLab",
         "description": "Hey there, everyone, Sanchit here back again with another video!",
         "subscribers": "83",
         "videos": "25"
@@ -59,6 +60,7 @@ const youtubeData = [
 
 const activityData = [
     {
+        "username": "sanchitbishwakarma",
         "type": "commit",
         "repo": "sanchitbishwakarma/portfolio",
         "message": "Updated project showcase with new designs",
@@ -66,16 +68,20 @@ const activityData = [
         "commits": 3
     },
     {
+        "username": "sanchitbishwakarma",
         "type": "star",
         "repo": "facebook/react",
+        "repoBio": "The library for web and native user interfaces.",
         "time": "5 hours ago"
     },
     {
+        "username": "sanchitbishwakarma",
         "type": "fork",
         "repo": "vercel/next.js",
         "time": "1 day ago"
     },
     {
+        "username": "sanchitbishwakarma",
         "type": "commit",
         "repo": "sanchitbishwakarma/discord-bot",
         "message": "Added moderation features and logging",
@@ -87,16 +93,18 @@ const activityData = [
 const platformsData = [
     {
         "name": "Bookies",
+        "website": "https://bookies.xyz",
         "description": "A book review application built with React Native and Expo.",
-        "iosLink": "#",
-        "androidLink": "#",
+        "iosLink": "https://sanchitbishwakarma.com.np/download/bookies/ios",
+        "androidLink": "https://sanchitbishwakarma.com.np/download/bookies/android",
         "icon": "assets/img/bookies-logo.png"
     },
     {
         "name": "Give Me Movie",
+        "website": "https://givememovie.xyz",
         "description": "A movie review application built with React Native and Expo.",
-        "iosLink": "#",
-        "androidLink": "#",
+        "iosLink": "https://sanchitbishwakarma.com.np/download/givememovie/ios",
+        "androidLink": "https://sanchitbishwakarma.com.np/download/givememovie/android",
         "icon": "assets/img/give-me-movie-logo.png"
     }
 ];

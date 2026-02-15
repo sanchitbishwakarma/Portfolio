@@ -25,7 +25,7 @@ function renderPlatforms(data) {
                 <div class="platform-left">
                     <div class="platform-header">
                         <i class="fas fa-circle-dot platform-icon"></i>
-                        <span class="platform-title">${platform.name}</span>
+                        <a href="${platform.website}" target="_blank" class="platform-title">${platform.name}</a>
                     </div>
                     <p class="platform-description">${platform.description}</p>
                     <div class="platform-buttons">
@@ -96,7 +96,7 @@ function renderYouTube(data) {
             <div class="youtube-card">
                 <div class="youtube-header">
                     <i class="fab fa-youtube youtube-icon"></i>
-                    <span class="youtube-title">${channel.name}</span>
+                    <a href="https://youtube.com/${channel.channelHandle}" target="_blank" class="youtube-title">${channel.name}</a>
                 </div>
                 <p class="youtube-description">${channel.description}</p>
                 <div class="youtube-stats">
@@ -129,15 +129,15 @@ function renderActivity(data) {
         switch (activity.type) {
             case "commit":
                 icon = '<i class="fas fa-code-branch activity-icon"></i>';
-                text = `Pushed ${activity.commits} commits to <strong>${activity.repo}</strong>`;
+                text = `pushed ${activity.commits} commits to`;
                 break;
             case "star":
                 icon = '<i class="fas fa-star activity-icon"></i>';
-                text = `Starred <strong>${activity.repo}</strong>`;
+                text = `starred`;
                 break;
             case "fork":
                 icon = '<i class="fas fa-code-branch activity-icon"></i>';
-                text = `Forked <strong>${activity.repo}</strong>`;
+                text = `forked`;
                 break;
         }
 
@@ -145,9 +145,12 @@ function renderActivity(data) {
             <div class="activity-item">
                 <div class="activity-header">
                     ${icon}
+                        <a href="https://github.com/${activity.username}" target="_blank" class="activity-username">${activity.username}</a>
                     <span class="activity-text">${text}</span>
+                        <a href="https://github.com/${activity.repo}" target="_blank" class="activity-repo">${activity.repo}</a>
                 </div>
                 ${activity.message ? `<p class="muted">${activity.message}</p>` : ''}
+                ${activity.repoBio ? `<p class="muted">${activity.repoBio}</p>` : ''}
                 <span class="activity-time">${activity.time}</span>
             </div>
         `;
@@ -163,20 +166,18 @@ function generateContributionGraph() {
     const graph = $("#contributionGraph");
     let html = "";
 
-    // Generate 365 squares (1 year)
+    const count = Math.floor(Math.random() * (1000 - 100 + 1)) + 100;
+
     for (let i = 0; i < 365; i++) {
-        // Random level for demo (0-4)
-        const level = Math.floor(Math.random() * 5);
+        const density = count / 1000;
+        const level = Math.random() < density ? Math.floor(Math.random() * 4) + 1 : 0;
         const className = level > 0 ? `contribution-square level-${level}` : 'contribution-square';
         html += `<span class="${className}"></span>`;
     }
 
     graph.html(html);
-
-    // Animate contribution count
-    animateCounter($("#contributionCount"), 1234, 2000);
+    animateCounter($("#contributionCount"), count, 2000);
 }
-
 // ===================================
 // Animated Counter
 // ===================================
@@ -200,13 +201,13 @@ function animateCounter(element, target, duration) {
 // ===================================
 function initAnimations() {
     // Fade in cards on load
-    $(".project-card, .youtube-card").each(function (index) {
+    $(".project-card, .youtube-card, .platform-card, .activity-item").each(function (index) {
         $(this).css({
             opacity: 0,
             transform: 'translateY(20px)'
         }).delay(index * 100).animate({
             opacity: 1
-        }, 500).css({
+        }, 200).css({
             transform: 'translateY(0)'
         });
     });
