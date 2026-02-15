@@ -1,6 +1,4 @@
-/* ===================================
-   GitHub Dark Theme Variables
-   =================================== */
+/* GitHub Dark Theme Variables */
 :root {
     --bg: #151b23;
     --card: #0d1117;
@@ -27,9 +25,7 @@
     /* 24px-32px */
 }
 
-/* ===================================
-   Reset & Base
-   =================================== */
+/* Reset & Base */
 * {
     margin: 0;
     padding: 0;
@@ -54,9 +50,7 @@ a:hover {
     color: var(--link-hover);
 }
 
-/* ===================================
-   Navbar
-   =================================== */
+/* Navbar */
 .navbar {
     background: #010409;
     border-bottom: 1px solid var(--border);
@@ -139,9 +133,7 @@ a:hover {
     cursor: pointer;
 }
 
-/* ===================================
-   Sub-Navigation
-   =================================== */
+/* Sub-Navigation */
 .sub-nav {
     border-bottom: 1px solid var(--border);
     background: var(--bg);
@@ -188,9 +180,7 @@ a:hover {
     color: var(--text);
 }
 
-/* ===================================
-   Main Container
-   =================================== */
+/* Main Container */
 .container {
     display: flex;
     max-width: 1280px;
@@ -199,9 +189,7 @@ a:hover {
     gap: 24px;
 }
 
-/* ===================================
-   Sidebar
-   =================================== */
+/* Sidebar */
 .sidebar {
     width: 300px;
     flex-shrink: 0;
@@ -353,17 +341,13 @@ a:hover {
     color: var(--text);
 }
 
-/* ===================================
-   Content Area
-   =================================== */
+/* Content Area */
 .content {
     flex: 1;
     min-width: 0;
 }
 
-/* ===================================
-   Section Header
-   =================================== */
+/* Section Header */
 .section-header {
     display: flex;
     justify-content: space-between;
@@ -381,9 +365,7 @@ a:hover {
     color: var(--link);
 }
 
-/* ===================================
-   Pinned Projects Grid
-   =================================== */
+/* Pinned Projects Grid */
 .pinned-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -481,9 +463,7 @@ a:hover {
     font-size: var(--fs-base);
 }
 
-/* ===================================
-   YouTube Section (New Design)
-   =================================== */
+/* YouTube Section */
 .youtube-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -616,9 +596,7 @@ a:hover {
     }
 }
 
-/* ===================================
-   Platforms Section
-   =================================== */
+/* Platforms Section */
 .platforms-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -716,9 +694,7 @@ a:hover {
     object-fit: contain;
 }
 
-/* ===================================
-   Contribution Graph
-   =================================== */
+/* Contribution Graph */
 .contribution-graph {
     background: var(--card);
     border: 1px solid var(--border);
@@ -801,9 +777,7 @@ a:hover {
     background: #39d353;
 }
 
-/* ===================================
-   Activity Timeline
-   =================================== */
+/* Activity Timeline */
 .activity-timeline {
     display: flex;
     flex-direction: column;
@@ -846,9 +820,7 @@ a:hover {
     color: var(--muted);
 }
 
-/* ===================================
-   Footer Styles
-   =================================== */
+/* Footer */
 .footer {
     border-top: 1px solid var(--border);
     margin-top: 40px;
@@ -888,9 +860,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ===================================
-   Responsive
-   =================================== */
+/* Responsive */
 @media (max-width: 900px) {
     .container {
         flex-direction: column;

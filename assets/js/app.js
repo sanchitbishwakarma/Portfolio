@@ -1,6 +1,4 @@
-// ===================================
 // DOM Ready
-// ===================================
 $(document).ready(function () {
     // Render all data
     renderProjects(projectsData);
@@ -13,9 +11,7 @@ $(document).ready(function () {
     initAnimations();
 });
 
-// ===================================
 // Render Platforms
-// ===================================
 function renderPlatforms(data) {
     let html = "";
 
@@ -49,9 +45,7 @@ function renderPlatforms(data) {
     $("#platforms").html(html);
 }
 
-// ===================================
 // Render Projects
-// ===================================
 function renderProjects(data) {
     let html = "";
 
@@ -86,9 +80,7 @@ function renderProjects(data) {
     $("#pinnedProjects").html(html);
 }
 
-// ===================================
 // Render YouTube Channels
-// ===================================
 function renderYouTube(data) {
     let html = "";
 
@@ -129,9 +121,7 @@ function renderYouTube(data) {
     $("#youtubeChannels").html(html);
 }
 
-// ===================================
 // Render Activity Timeline
-// ===================================
 function renderActivity(data) {
     let html = "";
 
@@ -172,9 +162,7 @@ function renderActivity(data) {
     $("#activityTimeline").html(html);
 }
 
-// ===================================
 // Generate Contribution Graph
-// ===================================
 function generateContributionGraph() {
     const graph = $("#contributionGraph");
     let html = "";
@@ -191,9 +179,7 @@ function generateContributionGraph() {
     graph.html(html);
     animateCounter($("#contributionCount"), count, 2000);
 }
-// ===================================
 // Animated Counter
-// ===================================
 function animateCounter(element, target, duration) {
     let start = 0;
     const increment = target / (duration / 16);
@@ -209,9 +195,7 @@ function animateCounter(element, target, duration) {
     }, 16);
 }
 
-// ===================================
 // Scroll Animations
-// ===================================
 function initAnimations() {
     // Fade in cards on load
     $(".project-card, .youtube-card, .platform-card, .activity-item").each(function (index) {
@@ -227,9 +211,7 @@ function initAnimations() {
 }
 
 
-// ===================================
 // Smooth Hover Effects
-// ===================================
 $(document).on("mouseenter", ".project-card", function () {
     $(this).css("transform", "translateY(-4px)");
 });
@@ -238,18 +220,14 @@ $(document).on("mouseleave", ".project-card", function () {
     $(this).css("transform", "translateY(0)");
 });
 
-// ===================================
 // Status Icon Easter Egg
-// ===================================
 $("#status-icon").on("dblclick", function () {
     const emojis = ["😏", "😌", "😔", "😌", "😏", "😂", "😍", "😎", "🤔", "😭", "😁", "😡", "🥳", "😱", "🤯", "🙄", "😴", "🤓", "😇", "😅"];
     const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
     $(this).html(randomEmoji);
 });
 
-// ===================================
 // Console Easter Egg
-// ===================================
 console.log('%c👋 Hey Developer!', 'font-size: 20px; font-weight: bold; color: #58a6ff;');
 console.log('%cBuilt with HTML + CSS + JS + jQuery + Local Data', 'font-size: 14px; color: #8b949e;');
 console.log('%cNo more CORS issues! 💪', 'font-size: 12px; color: #238636;');
