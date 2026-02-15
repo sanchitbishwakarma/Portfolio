@@ -1,0 +1,26 @@
+[
+    {
+        "type": "commit",
+        "repo": "sanchitbishwakarma/portfolio",
+        "message": "Updated project showcase with new designs",
+        "time": "2 hours ago",
+        "commits": 3
+    },
+    {
+        "type": "star",
+        "repo": "facebook/react",
+        "time": "5 hours ago"
+    },
+    {
+        "type": "fork",
+        "repo": "vercel/next.js",
+        "time": "1 day ago"
+    },
+    {
+        "type": "commit",
+        "repo": "sanchitbishwakarma/discord-bot",
+        "message": "Added moderation features and logging",
+        "time": "2 days ago",
+        "commits": 5
+    }
+]
