@@ -1,36 +1,51 @@
-# Portfolio
+# Sanchit Bishwakarma - Modern GitHub-Style Portfolio
 
-A modern, clean portfolio website built with HTML, CSS, and jQuery.
+A high-performance, responsive portfolio website that mirrors the GitHub UI aesthetics while providing a unique personal branding experience.
 
-## Tech Stack & Implementation
+## ✨ Key Features
 
-### 🏗️ HTML (Structure)
-- **Primary Layout**: Built using semantic HTML5 elements (`<nav>`, `<aside>`, `<main>`).
-- **Components**: Documented the navbar, sidebar profile, and main content sections.
-- **Metadata**: Implemented SEO tags, Open Graph (OG) tags for social sharing, and responsive viewport settings.
+### 🌓 Dynamic Theming
+- **Dual Theme Support**: Seamlessly toggle between GitHub Dark and Light modes.
+- **Persistent Choice**: User preference is automatically saved in `localStorage`.
+- **Fluid Transitions**: Smooth color transitions applied to all UI components.
 
-### 🎨 CSS (Styling)
-- **Design System**: Used CSS Variables (`:root`) for the GitHub Dark theme.
-- **Layouts**: Heavy use of **Flexbox** for alignment and **CSS Grid** for project/platform cards.
-- **Responsive Design**: Custom Media Queries to ensure a seamless experience across mobile, tablet, and desktop.
-- **Animations**: CSS transitions for smooth hover effects and border glows.
+### 📊 Live GitHub Integration
+- **AJAX Fetching**: Real-time integration with the GitHub API to fetch public repositories and starred projects.
+- **Dynamic Counters**: Live counts for Repositories and Stars fetched directly from the user profile.
+- **Overview Caching**: Instant switching between dynamic tabs (Repo/Stars) and the static overview using local caching.
 
-### ⚙️ JavaScript (Logic)
-- **Data Rendering**: Custom functions to iterate through data and inject HTML dynamically.
-- **Contribution Graph**: Logic to generate 365 days of activity with random intensity levels.
-- **Animated Counter**: Used `setInterval` logic to create a ticking number effect for contribution counts.
-- **Data Management**: Organized data into local constants to avoid CORS issues while maintaining a clean "JSON-like" structure.
+### 📱 Premium Responsive Design
+- **Fluid Typography**: Responsive font scaling using CSS `clamp()` and rem units for perfect readability on any screen size.
+- **Mobile Optimized**: Intelligent sidebar management that hides profile details on mobile to maximize content space for dynamic lists.
+- **Custom Grid Layouts**: Adaptive Flexbox and CSS Grid systems for project cards and platforms.
 
-### 🚀 jQuery (Interactivity)
-- **DOM Manipulation**: Simplifies selecting and updating elements (e.g., `$("#pinnedProjects").html(html)`).
-- **Event Handling**: Used for mobile menu toggles and specialized hover interactions.
-- **Staggered Animations**: Leveraged `.animate()` and `.delay()` to create professional, sequential fade-in effects for project cards on load.
+### 🎬 Professional Motion Design
+- **Entrance Animations**: Staggered fade-in and slide-up entrance effects for all major sections (sidebar, headers, content cards, footer).
+- **Interactive Micro-animations**: Smooth hover transitions on project cards and social icons.
+- **Animated Counters**: Ticking animation for contribution totals.
 
 ---
 
-## Project Structure
-- `index.html` - Main landing page
-- `assets/` - Contains all static assets (CSS, JS, Images)
-- `assets/css/` - Custom styling
-- `assets/js/` - Logic (`app.js`) and Dynamic Data (`data.js`)
-- `assets/img/` - Profile images, icons, and brand assets
+## 🛠️ Tech Stack
+
+- **Core**: HTML5, CSS3 (Vanilla), JavaScript (ES6+)
+- **Libraries**: jQuery for powerful DOM manipulation and AJAX handling.
+- **Icons**: Font Awesome 6.x for GitHub, YouTube, and brand iconography.
+- **API**: GitHub REST API for dynamic content.
+
+---
+
+## 📂 Project Structure
+
+- `index.html` - The central hub of the application.
+- `assets/css/style.css` - Custom design system with theme variables and responsive utility.
+- `assets/js/app.js` - Core logic, API handlers, tab management, and animations.
+- `assets/js/data.js` - Static local data for YouTube, platforms, and activity timeline.
+- `assets/img/` - Optimized assets, channel avatars, and platform icons.
+
+---
+
+## 🚀 Performance & SEO
+- **No Dependencies**: Lightweight architecture with minimal overhead.
+- **CORS-Proof**: Strategic mix of local data and authorized API calls.
+- **SEO Ready**: Comprehensive meta tags and Open Graph support for social visibility.
