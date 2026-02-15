@@ -245,6 +245,15 @@ $(document).on("mouseleave", ".project-card", function () {
 });
 
 // ===================================
+// Status Icon Easter Egg
+// ===================================
+$("#status-icon").on("dblclick", function () {
+    const emojis = ["😏", "😌", "😔", "😌", "😏", "😂", "😍", "😎", "🤔", "😭", "😁", "😡", "🥳", "😱", "🤯", "🙄", "😴", "🤓", "😇", "😅"];
+    const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+    $(this).html(randomEmoji);
+});
+
+// ===================================
 // Console Easter Egg
 // ===================================
 console.log('%c👋 Hey Developer!', 'font-size: 20px; font-weight: bold; color: #58a6ff;');
