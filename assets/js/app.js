@@ -32,6 +32,138 @@ $(document).ready(function () {
         }
     }
 
+    // Tab Switching
+    const overviewTab = $('#overviewTab');
+    const reposTab = $('#reposTab');
+    const starsTab = $('#starsTab');
+    const mainArea = $('#mainContentArea');
+    let overviewCache = mainArea.html();
+
+    overviewTab.on('click', function () {
+        if ($(this).hasClass('active')) return;
+        switchTab($(this));
+        mainArea.html(overviewCache);
+        initAnimations();
+    });
+
+    reposTab.on('click', function () {
+        if ($(this).hasClass('active')) return;
+        switchTab($(this));
+        fetchGitHubData('https://api.github.com/users/sanchitbishwakarma/repos?type=public&sort=updated&direction=desc');
+    });
+
+    starsTab.on('click', function () {
+        if ($(this).hasClass('active')) return;
+        switchTab($(this));
+        fetchGitHubData('https://api.github.com/users/sanchitbishwakarma/starred');
+    });
+
+    function switchTab(tab) {
+        $('.sub-nav-item').removeClass('active');
+        tab.addClass('active');
+    }
+
+    function fetchGitHubData(url) {
+        mainArea.html(`
+            <div class="loading-container">
+                <div class="spinner"></div>
+            </div>
+        `);
+
+        $.ajax({
+            url: url,
+            method: 'GET',
+            success: function (data) {
+                renderRepos(data);
+            },
+            error: function () {
+                mainArea.html('<p class="muted" style="text-align:center; padding: 40px;">Failed to load data. Please try again later.</p>');
+            }
+        });
+    }
+
+    function renderRepos(repos) {
+        if (repos.length === 0) {
+            mainArea.html('<p class="muted" style="text-align:center; padding: 40px;">No public items found.</p>');
+            return;
+        }
+
+        let html = '<div class="repo-list">';
+        repos.forEach(repo => {
+            const updatedAt = repo.updated_at ? new Date(repo.updated_at).toLocaleDateString(undefined, {
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric'
+            }) : 'Recently';
+
+            html += `
+                <div class="repo-item">
+                    <a href="${repo.html_url}" target="_blank" class="repo-name">${repo.name}</a>
+                    ${repo.description ? `<p class="repo-description">${repo.description}</p>` : ''}
+                    <div class="repo-meta">
+                        ${repo.language ? `
+                            <div class="repo-language">
+                                <span class="language-dot" style="background: ${getLanguageColor(repo.language)}"></span>
+                                <span>${repo.language}</span>
+                            </div>
+                        ` : ''}
+                        <div class="repo-stats">
+                            <i class="far fa-star"></i>
+                            <span>${repo.stargazers_count}</span>
+                        </div>
+                        <div class="repo-stats">
+                            <i class="fas fa-code-branch"></i>
+                            <span>${repo.forks_count}</span>
+                        </div>
+                        ${repo.updated_at ? `<span>Updated on ${updatedAt}</span>` : ''}
+                    </div>
+                </div>
+            `;
+        });
+        html += '</div>';
+        mainArea.html(html);
+    }
+
+    function getLanguageColor(lang) {
+        const colors = {
+            'JavaScript': '#f1e05a',
+            'Python': '#3572A5',
+            'HTML': '#e34c26',
+            'CSS': '#563d7c',
+            'TypeScript': '#3178c6',
+            'Go': '#00ADD8',
+            'Java': '#b07219',
+            'C++': '#f34b7d',
+            'C#': '#178600',
+            'PHP': '#4F5D95',
+            'Ruby': '#701516'
+        };
+        return colors[lang] || '#8b949e';
+    }
+
+    // Initial Counts
+    fetchUserCounts();
+
+    function fetchUserCounts() {
+        // Fetch User Profile for Repo Count
+        $.ajax({
+            url: 'https://api.github.com/users/sanchitbishwakarma',
+            method: 'GET',
+            success: function (user) {
+                $('#reposCount').text(user.public_repos);
+            }
+        });
+
+        // Fetch Starred for Star Count
+        $.ajax({
+            url: 'https://api.github.com/users/sanchitbishwakarma/starred',
+            method: 'GET',
+            success: function (stars) {
+                $('#starsCount').text(stars.length);
+            }
+        });
+    }
+
     // Initialize features
     initAnimations();
 });
