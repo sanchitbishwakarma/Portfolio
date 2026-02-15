@@ -6,45 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanchit Bishwakarma - Portfolio</title>
 
-    <!-- Meta Tags -->
+    <!-- Meta -->
     <meta name="description" content="Sanchit Bishwakarma's GitHub profile">
     <meta name="keywords" content="Sanchit Bishwakarma, GitHub, Portfolio">
     <meta name="author" content="Sanchit Bishwakarma">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Open Graph Meta Tags -->
+    <!-- Open Graph -->
     <meta property="og:title" content="Sanchit Bishwakarma - Portfolio">
     <meta property="og:description" content="Sanchit Bishwakarma's GitHub profile">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sanchitbishwakarma.com.np">
+    <meta property="og:url" content="https://www.sanchitbishwakarma.com.np">
     <meta property="og:image" content="https://sanchitbishwakarma.com.np/assets/img/Profile_Sanchit.jpg">
 
-    <!-- Twitter Meta Tags -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sanchit Bishwakarma - Portfolio">
     <meta name="twitter:description" content="Sanchit Bishwakarma's GitHub profile">
     <meta name="twitter:image" content="https://sanchitbishwakarma.com.np/assets/img/Profile_Sanchit.jpg">
 
-    <!-- Font Awesome -->
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Styles -->
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <!-- Top Navbar -->
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-left">
                 <button class="menu-btn">
                     <i class="fas fa-bars"></i>
                 </button>
-                <a href="#" class="nav-logo">
+                <span class="nav-logo">
                     <i class="fab fa-github"></i>
-                </a>
+                </span>
                 <input type="text" class="search-input" placeholder="Type / to search">
             </div>
 
@@ -55,15 +56,16 @@
                 <a href="#" class="nav-link">Marketplace</a>
                 <a href="#" class="nav-link">Explore</a>
                 <div class="nav-icons">
-                    <i class="far fa-bell"></i>
+                    <i class="fas fa-gear"></i>
                     <i class="fas fa-plus"></i>
+                    <i class="far fa-bell"></i>
                     <img src="assets/img/Profile_Sanchit.jpg" alt="Profile" class="nav-avatar">
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Sub Navigation -->
+    <!-- Sub-navigation -->
     <div class="sub-nav">
         <div class="sub-nav-container">
             <a href="#" class="sub-nav-item active">
@@ -84,15 +86,15 @@
         </div>
     </div>
 
-    <!-- Main Container -->
+    <!-- Container -->
     <div class="container">
-        <!-- Left Sidebar -->
+        <!-- Sidebar -->
         <aside class="sidebar">
             <div class="profile-section">
                 <div class="profile-image-container">
                     <img src="https://avatars.githubusercontent.com/u/156568930?v=4" alt="Sanchit Bishwakarma"
                         class="profile-image">
-                    <div class="status-icon">
+                    <div class="status-icon" id="status-icon">
                         <i class="far fa-smile"></i>
                     </div>
                 </div>
@@ -155,38 +157,38 @@
             </div>
         </aside>
 
-        <!-- Right Content Area -->
+        <!-- Content -->
         <main class="content">
             <!-- Main Content -->
-            <!-- Pinned Section -->
+            <!-- Pins -->
             <div class="section-header">
                 <h2>Pinned</h2>
                 <a href="#" class="customize-link">Customize your pins</a>
             </div>
 
             <div class="pinned-grid" id="pinnedProjects">
-                <!-- Projects loaded via AJAX -->
+                <!-- Dynamic Projects -->
             </div>
 
-            <!-- YouTube Section -->
+            <!-- YouTube -->
             <div class="section-header" style="margin-top: 40px;">
                 <h2>YouTube</h2>
             </div>
 
             <div class="youtube-grid" id="youtubeChannels">
-                <!-- YouTube channels loaded via AJAX -->
+                <!-- Dynamic YouTube -->
             </div>
 
-            <!-- Platforms Section -->
+            <!-- Platforms -->
             <div class="section-header" style="margin-top: 40px;">
                 <h2>Platforms</h2>
             </div>
 
-            <div class="platforms-grid" id="platforms">
-                <!-- Platforms loaded dynamically -->
+            <div class="platforms-grid " id="platforms">
+                <!-- Dynamic Platforms -->
             </div>
 
-            <!-- Contribution Graph -->
+            <!-- Graph -->
             <div class="section-header" style="margin-top: 40px;">
                 <h2>
                     <span id="contributionCount">1,234</span> contributions in the last year
@@ -196,7 +198,7 @@
             <div class="contribution-graph">
                 <div class="graph-placeholder">
                     <div class="graph-row" id="contributionGraph">
-                        <!-- Contribution squares will be generated -->
+                        <!-- Dynamic Squares -->
                     </div>
                 </div>
                 <div class="graph-legend">
@@ -212,41 +214,21 @@
                 </div>
             </div>
 
-            <!-- Activity Section -->
+            <!-- Activity -->
             <div class="section-header" style="margin-top: 40px;">
                 <h2>Contribution activity</h2>
             </div>
 
             <div class="activity-timeline" id="activityTimeline">
-                <!-- Activity items loaded via AJAX -->
+                <!-- Dynamic Activity -->
             </div>
         </main>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <i class="fab fa-github"></i>
-                <span>© 2026 Sanchit Bishwakarma</span>
-            </div>
-            <div class="footer-links">
-                <a href="#" class="footer-link">Terms</a>
-                <a href="#" class="footer-link">Privacy</a>
-                <a href="#" class="footer-link">Security</a>
-                <a href="#" class="footer-link">Status</a>
-                <a href="#" class="footer-link">Docs</a>
-                <a href="#" class="footer-link">Contact</a>
-                <a href="#" class="footer-link">Manage cookies</a>
-                <a href="#" class="footer-link">Do not share my personal information</a>
-            </div>
-        </div>
-    </footer>
-
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Data and Main Script -->
+    <!-- Scripts -->
     <script src="assets/js/data.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
