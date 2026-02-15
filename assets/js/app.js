@@ -24,7 +24,7 @@ function renderPlatforms(data) {
             <div class="platform-card">
                 <div class="platform-left">
                     <div class="platform-header">
-                        <i class="fas fa-circle-dot platform-icon"></i>
+                        <i class="fa-brands fa-hashnode"></i>
                         <a href="${platform.website}" target="_blank" class="platform-title">${platform.name}</a>
                     </div>
                     <p class="platform-description">${platform.description}</p>
@@ -94,19 +94,31 @@ function renderYouTube(data) {
     data.forEach(channel => {
         html += `
             <div class="youtube-card">
-                <div class="youtube-header">
-                    <i class="fab fa-youtube youtube-icon"></i>
-                    <a href="https://youtube.com/${channel.channelHandle}" target="_blank" class="youtube-title">${channel.name}</a>
-                </div>
-                <p class="youtube-description">${channel.description}</p>
-                <div class="youtube-stats">
-                    <div class="youtube-stat">
-                        <i class="fas fa-users"></i>
-                        <span>${channel.subscribers} subscribers</span>
+                <div class="youtube-main-content">
+                    <div class="youtube-left-side">
+                        <div class="youtube-header-row">
+                            <div class="youtube-brand">
+                                <i class="fab fa-youtube youtube-brand-icon"></i>
+                                <a href="https://youtube.com/${channel.channelHandle}" target="_blank" class="youtube-channel-name">${channel.name}</a>
+                            </div>
+                            <div class="youtube-menu-dots">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </div>
+                        <p class="youtube-channel-desc">${channel.description}</p>
+                        <div class="youtube-footer-stats">
+                            <div class="youtube-footer-stat">
+                                <i class="fas fa-user-group"></i>
+                                <span>${channel.subscribers} subscribers</span>
+                            </div>
+                            <div class="youtube-footer-stat">
+                            <i class="fa-brands fa-youtube"></i>
+                                <span>${channel.videos} videos</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="youtube-stat">
-                        <i class="fas fa-video"></i>
-                        <span>${channel.videos} videos</span>
+                    <div class="youtube-right-side">
+                        <img src="${channel.avatar}" alt="${channel.name}" class="youtube-channel-avatar">
                     </div>
                 </div>
             </div>

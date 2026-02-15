@@ -54,7 +54,8 @@ const youtubeData = [
         "channelHandle": "@SanchitCodeLab",
         "description": "Hey there, everyone, Sanchit here back again with another video!",
         "subscribers": "83",
-        "videos": "25"
+        "videos": "25",
+        "avatar": "https://avatars.githubusercontent.com/u/156568930?v=4"
     }
 ];
 
