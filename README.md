@@ -37,11 +37,19 @@ A high-performance, responsive portfolio website that mirrors the GitHub UI aest
 
 ## 📂 Project Structure
 
-- `index.html` - The central hub of the application.
-- `assets/css/style.css` - Custom design system with theme variables and responsive utility.
-- `assets/js/app.js` - Core logic, API handlers, tab management, and animations.
-- `assets/js/data.js` - Static local data for YouTube, platforms, and activity timeline.
-- `assets/img/` - Optimized assets, channel avatars, and platform icons.
+- `index.html` - Minimal shell that loads modular components.
+- `components/` - Reusable HTML fragments (navbar, sidebar, etc.).
+- `assets/css/` - Modular CSS architecture:
+  - `base/` - Variables and resets.
+  - `layout/` - Structural styles (nav, footer, container).
+  - `components/` - Widget-specific styles (cards, graphs).
+  - `utils/` - Animations and responsive design.
+- `assets/js/` - Modular ES6 JavaScript:
+  - `core/` - API and helper utilities.
+  - `components/` - Rendering and animation logic.
+  - `features/` - Feature modules (theme, tabs).
+  - `app.js` - Main entry point and component orchestrator.
+- `assets/img/` - Optimized brand assets and icons.
 
 ---
 

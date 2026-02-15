@@ -1,0 +1,33 @@
+:root {
+    --bg: #0d1117;
+    --card: #151b23;
+    --nav-bg: #010409;
+    --border: #30363d;
+    --text: #c9d1d9;
+    --muted: #8b949e;
+    --link: #58a6ff;
+    --link-hover: #79c0ff;
+    --green: #238636;
+    --green-hover: #2ea043;
+    --subnav-bg: #151b23;
+
+    /* Responsive Typography */
+    --fs-xs: clamp(0.65rem, 0.5vw + 0.5rem, 0.75rem);
+    --fs-sm: clamp(0.75rem, 0.5vw + 0.65rem, 0.875rem);
+    --fs-base: clamp(0.875rem, 0.5vw + 0.75rem, 1rem);
+    --fs-lg: clamp(1rem, 1vw + 0.8rem, 1.25rem);
+    --fs-xl: clamp(1.25rem, 1.5vw + 1rem, 1.625rem);
+    --fs-2xl: clamp(1.5rem, 2vw + 1.2rem, 2rem);
+}
+
+[data-theme="light"] {
+    --bg: #ffffff;
+    --card: #f6f8fa;
+    --nav-bg: #f6f8fa;
+    --border: #d0d7de;
+    --text: #24292f;
+    --muted: #57606a;
+    --link: #0969da;
+    --link-hover: #0c87eb;
+    --subnav-bg: #ffffff;
+}

@@ -11,21 +11,13 @@
     <meta name="keywords" content="Sanchit Bishwakarma, GitHub, Portfolio">
     <meta name="author" content="Sanchit Bishwakarma">
     <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Sanchit Bishwakarma - Portfolio">
     <meta property="og:description" content="Sanchit Bishwakarma's GitHub profile">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sanchitbishwakarma.com.np">
-    <meta property="og:url" content="https://www.sanchitbishwakarma.com.np">
     <meta property="og:image" content="https://sanchitbishwakarma.com.np/assets/img/Profile_Sanchit.jpg">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sanchit Bishwakarma - Portfolio">
-    <meta name="twitter:description" content="Sanchit Bishwakarma's GitHub profile">
-    <meta name="twitter:image" content="https://sanchitbishwakarma.com.np/assets/img/Profile_Sanchit.jpg">
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -36,170 +28,43 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-left">
-                <button class="menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <span class="nav-logo">
-                    <i class="fab fa-github"></i>
-                </span>
-                <span class="github-username">sanchitbishwakarma</span>
-            </div>
-            <input type="text" class="search-input" placeholder="Type / to search">
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
 
-            <div class="nav-right">
-                <div class="nav-icons">
-                    <div class="theme-toggle" id="themeToggle">
-                        <i class="fas fa-moon"></i>
-                    </div>
-                    <i class="fas fa-gear"></i>
-                    <i class="fas fa-plus"></i>
-                    <i class="far fa-bell"></i>
-                    <img src="assets/img/Profile_Sanchit.jpg" alt="Profile" class="nav-avatar">
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Sub-navigation -->
-    <div class="sub-nav">
-        <div class="sub-nav-container">
-            <a href="javascript:void(0)" class="sub-nav-item active" id="overviewTab">
-                <i class="fas fa-book-open"></i> Overview
-            </a>
-            <a href="javascript:void(0)" class="sub-nav-item" id="reposTab">
-                <i class="fas fa-book-bookmark"></i> Repositories <span id="reposCount">0</span>
-            </a>
-            <a href="https://github.com/sanchitbishwakarma?tab=projects" target="_blank" class="sub-nav-item">
-                <i class="fas fa-table-list"></i> Projects
-            </a>
-            <a href="https://github.com/sanchitbishwakarma?tab=packages" target="_blank" class="sub-nav-item">
-                <i class="fas fa-cube"></i> Packages
-            </a>
-            <a href="javascript:void(0)" class="sub-nav-item" id="starsTab">
-                <i class="fa-regular fa-star"></i> Stars <span id="starsCount">0</span>
-            </a>
-        </div>
-    </div>
+    <!-- Sub-navigation Placeholder -->
+    <div id="subnav-placeholder"></div>
 
     <!-- Container -->
     <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="profile-section">
-                <div class="profile-image-container">
-                    <img src="https://avatars.githubusercontent.com/u/156568930?v=4" alt="Sanchit Bishwakarma"
-                        class="profile-image">
-                    <div class="status-icon" id="status-icon">
-                        <i class="far fa-smile"></i>
-                    </div>
-                </div>
-                <h1 class="profile-name">Sanchit Bishwakarma</h1>
-                <p class="profile-username">sanchitbishwakarma</p>
-                <p class="profile-bio">I make coding videos. My youtube channel explains my work more. Check that out
-                </p>
-
-                <button class="hidden btn-follow">Follow</button>
-
-                <div class="hidden profile-stats">
-                    <a href="#" class="stat-item">
-                        <i class="fas fa-users"></i>
-                        <span><strong>2.3K</strong> followers</span>
-                    </a>
-                    <span class="stat-dot">·</span>
-                    <a href="#" class="stat-item">
-                        <span><strong>89</strong> following</span>
-                    </a>
-                </div>
-
-                <div class="hidden profile-links">
-                    <a href="#" class="profile-link">
-                        <i class="fas fa-building"></i>
-                        <span>Localhost</span>
-                    </a>
-                    <a href="#" class="profile-link">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Nepal</span>
-                    </a>
-                    <a href="mailto:sanchitbishwakarma91@gmail.com" class="profile-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>sanchitbishwakarma91@gmail.com</span>
-                    </a>
-                    <a href="https://sanchitbishwakarma.com.np" target="_blank" class="profile-link">
-                        <i class="fas fa-link"></i>
-                        <span>sanchitbishwakarma.com.np</span>
-                    </a>
-                </div>
-
-                <div class="profile-separator"></div>
-
-                <div class="social-links">
-                    <a href="https://x.com/sanchitbishwakarma" target="_blank" class="social-circle">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="https://sanchitbishwakarma.com.np/whatsapp" target="_blank" class="social-circle">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://instagram.com/sanchitbishwakarma" target="_blank" class="social-circle">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/sanchitbishwakarma" target="_blank" class="social-circle">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/sanchitbishwakarma" target="_blank" class="social-circle">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-        </aside>
+        <!-- Sidebar Placeholder -->
+        <div id="sidebar-placeholder"></div>
 
         <!-- Content -->
         <main class="content">
-            <!-- Main Content -->
             <div id="mainContentArea">
-                <!-- Pins -->
+                <!-- Overview Content -->
                 <div class="section-header">
                     <h2>Pinned</h2>
                     <a href="#" class="customize-link">Customize your pins</a>
                 </div>
+                <div class="pinned-grid" id="pinnedProjects"></div>
 
-                <div class="pinned-grid" id="pinnedProjects">
-                    <!-- Dynamic Projects -->
-                </div>
-
-                <!-- YouTube -->
                 <div class="section-header" style="margin-top: 40px;">
                     <h2>YouTube</h2>
                 </div>
+                <div class="youtube-grid" id="youtubeChannels"></div>
 
-                <div class="youtube-grid" id="youtubeChannels">
-                    <!-- Dynamic YouTube -->
-                </div>
-
-                <!-- Platforms -->
                 <div class="section-header" style="margin-top: 40px;">
                     <h2>Platforms</h2>
                 </div>
+                <div class="platforms-grid" id="platforms"></div>
 
-                <div class="platforms-grid " id="platforms">
-                    <!-- Dynamic Platforms -->
-                </div>
-
-                <!-- Graph -->
                 <div class="section-header" style="margin-top: 40px;">
-                    <h2>
-                        <span id="contributionCount">1,234</span> contributions in the last year
-                    </h2>
+                    <h2><span id="contributionCount">0</span> contributions in the last year</h2>
                 </div>
-
                 <div class="contribution-graph">
                     <div class="graph-placeholder">
-                        <div class="graph-row" id="contributionGraph">
-                            <!-- Dynamic Squares -->
-                        </div>
+                        <div class="graph-row" id="contributionGraph"></div>
                     </div>
                     <div class="graph-legend">
                         <span>Less</span>
@@ -214,24 +79,23 @@
                     </div>
                 </div>
 
-                <!-- Activity -->
                 <div class="section-header" style="margin-top: 40px;">
                     <h2>Contribution activity</h2>
                 </div>
-
-                <div class="activity-timeline" id="activityTimeline">
-                    <!-- Dynamic Activity -->
-                </div>
+                <div class="activity-timeline" id="activityTimeline"></div>
             </div>
         </main>
     </div>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Scripts -->
     <script src="assets/js/data.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js" type="module"></script>
 </body>
 
 </html>
