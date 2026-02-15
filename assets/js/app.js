@@ -6,7 +6,8 @@ import {
     renderYouTube,
     renderPlatforms,
     renderActivity,
-    generateContributionGraph
+    generateContributionGraph,
+    renderTestimonials
 } from './components/render.js';
 import { fetchUserProfile, fetchStarred } from './core/api.js';
 
@@ -19,6 +20,7 @@ $(document).ready(async function () {
     if (typeof youtubeData !== 'undefined') renderYouTube(youtubeData);
     if (typeof platformsData !== 'undefined') renderPlatforms(platformsData);
     if (typeof activityData !== 'undefined') renderActivity(activityData);
+    if (typeof testimonialsData !== 'undefined') renderTestimonials(testimonialsData);
     generateContributionGraph();
 
     // 3. Initialize Features
@@ -35,7 +37,7 @@ $(document).ready(async function () {
     });
 
     // 5. Easter Eggs & Global listeners
-    setupEasterEggs();
+    setupGlobalEvents();
 });
 
 async function loadComponents() {
@@ -55,7 +57,7 @@ async function loadComponents() {
     return Promise.all(promises);
 }
 
-function setupEasterEggs() {
+function setupGlobalEvents() {
     // Smooth Hover Effects
     $(document).on("mouseenter", ".project-card", function () {
         $(this).css("transform", "translateY(-4px)");
@@ -73,5 +75,4 @@ function setupEasterEggs() {
     });
 
     console.log('%c👋 Hey Developer!', 'font-size: 20px; font-weight: bold; color: #58a6ff;');
-    console.log('%cModular project structure implemented! 💪', 'font-size: 14px; color: #238636;');
 }

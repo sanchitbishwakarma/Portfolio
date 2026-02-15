@@ -126,6 +126,7 @@ export function generateContributionGraph() {
     const graph = $("#contributionGraph");
     let html = "";
     const count = Math.floor(Math.random() * (1000 - 100 + 1)) + 100;
+
     for (let i = 0; i < 365; i++) {
         const density = count / 1000;
         const level = Math.random() < density ? Math.floor(Math.random() * 4) + 1 : 0;
@@ -165,4 +166,24 @@ export function renderRepos(repos, containerId) {
     });
     html += '</div>';
     container.html(html);
+}
+
+export function renderTestimonials(data) {
+    let html = '<div class="testimonials-grid">';
+    data.forEach(item => {
+        html += `
+            <div class="testimonial-card">
+                <p class="testimonial-text">"${item.text}"</p>
+                <div class="testimonial-user">
+                    <img src="${item.avatar}" alt="${item.author}" class="testimonial-avatar">
+                    <div class="testimonial-info">
+                        <h4>${item.author}</h4>
+                        <p>${item.role}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+    html += '</div>';
+    $("#testimonials-placeholder").html(html);
 }

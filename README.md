@@ -28,9 +28,12 @@ A high-performance, modular portfolio website that mirrors the GitHub UI aesthet
 - **Entrance Orchestration**: Staggered fade-in and slide-up entrance effects for all major UI blocks.
 - **Animated Counters**: Ticking animation for contribution totals and analytics.
 
+### Social Proof
+- **Testimonials Section**: Integrated recommendation cards to showcase professional feedback and credibility.
+
 ---
 
-## 🛠️ Technology Breakdown
+## Technology Breakdown
 
 ### HTML (The Structure)
 - **Modular Shell**: Created a clean `index.html` structure that acts as a container for dynamic components.
@@ -74,3 +77,14 @@ A high-performance, modular portfolio website that mirrors the GitHub UI aesthet
 - **Asynchronous Loading**: Components load in parallel for faster perceived performance.
 - **Clean Codebase**: Removed all hardcoded decorative comments in favor of a clean, modular structure.
 - **SEO Ready**: Full meta-tag support, Open Graph integration, and semantic HTML5.
+
+---
+
+## How to Run Locally
+
+Since the project uses **ES6 Modules** and dynamically loads HTML components, it must be served through a local web server (instead of just opening the `index.html` file directly).
+
+### Recommended Method:
+1.  **VS Code Live Server**: Right-click `index.html` and select **"Open with Live Server"**.
+2.  **Python**: Run `python -m http.server` in the root directory.
+3.  **Node.js**: Use `npx serve` or any other static file server.

@@ -117,3 +117,29 @@ const platformsData = [
     }
 ];
 
+const testimonialsData = [
+    {
+        "text": "Sanchit is an exceptional developer who consistently delivers high-quality code. His attention to detail and problem-solving skills are top-notch.",
+        "author": "Papu Yadav",
+        "role": "Founder & CEO of Billtize",
+        "avatar": "https://media.licdn.com/dms/image/v2/D4D35AQGRFHwWbnQDjw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1726156508946?e=1771801200&v=beta&t=c87nMli18eWJ_nYenA2QvZ5r7uKAFOSQ8dAuUYpowUY"
+    },
+    {
+        "text": "Working with Sanchit was a pleasure. He took my vision and turned it into a fully functional, beautiful application faster than expected.",
+        "author": "Sagar Gurung",
+        "role": "MERN Stack Instructor at Mindrisers",
+        "avatar": "https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=Brian"
+    },
+    {
+        "text": "Sanchit's expertise in front-end development is remarkable. He has a keen eye for design and performance, ensuring every user interface is both beautiful and functional.",
+        "author": "Suman Sunuwar",
+        "role": "Front-End Developer",
+        "avatar": "https://media.licdn.com/dms/image/v2/D5603AQHi92OkmY-X3g/profile-displayphoto-scale_400_400/B56ZuR104iKcAg-/0/1767678366750?e=1772668800&v=beta&t=lEBuAIZ2ceDl2zMjKPr54JESpdcXSVivCzneYcgUo3M"
+    },
+    {
+        "text": "Sanchit is a highly skilled developer who excels in both frontend and backend. His ability to build scalable systems and his deep understanding of the MERN stack is truly impressive.",
+        "author": "Rochak Gurung",
+        "role": "Laravel Backend Developer | MERN Stack Developer | Passionate About Scalable Web Apps",
+        "avatar": "https://media.licdn.com/dms/image/v2/D4E03AQHiF95zDiVkhA/profile-displayphoto-scale_400_400/B4EZgDc7gTHoAg-/0/1752404574292?e=1772668800&v=beta&t=CYj-pnojTMA3Gj-VApr9f7BSh1m_sRmD48SakQp-k5w"
+    }
+];
